@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" text="text/css">
+    <link rel="icon" type="images/x-icon" href="./icons8-pokemon-48.png">
+</head>
+<body>
+<!--navbar-->
+    <nav class="navbarCtr" id="navbar">
+        <img src="original.png" alt="pokedex-title" class="main-title">
+        <div class="search">
+            <input type="text" placeholder="Enter A Pokemon" class="input" id="pokemonName">
+            <button onclick="fetchData()" class="fetch-btn">Fetch</button>
+        </div>
+    </nav>
+<!--end of navbar-->
+
+<!--pokedex-->  
+    <section class="pokeDex" id="pokeDex">
+
+        <div class="image">
+            <img src="" alt="pokemon-sprite" id="pokemonImg" class="pokemonImg">
+        </div>
+
+        <div class="info">
+            <h1 id="name"></h1>
+            <h1 id="type"></h1>
+            <h1 id="base-experience"></h1>
+            <h1 id="weight"></h1>
+            <h1 id="height"></h1>
+            <h1 id="hp"></h1>
+            <h1 id="attack"></h1>
+            <h1 id="defense"></h1>
+            <h1 id="special-attack"></h1>
+            <h1 id="special-defense"></h1>
+            <h1 id="speed"></h1>
+        </div>
+    </section>
+<!--end of pokedex-->
+
+    <script src="index.js"></script>
+</body>
+</html>
